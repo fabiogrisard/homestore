@@ -42,7 +42,7 @@
             color: #fff;
             font-weight: bold;
             margin-top: 10px;
-            transition: opacity 0.3s ease-in-out;
+            text-shadow: 2px 2px 4px #002e5b; /* Sombra para melhor visibilidade */
         }
         .social-icons {
             position: absolute;
@@ -54,7 +54,11 @@
         .social-icons a {
             text-decoration: none;
             color: #fff;
-            font-size: 20px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #5ae2e6;
         }
         nav {
             display: flex;
@@ -89,6 +93,7 @@
             padding: 20px;
             color: #004aad;
             border-top: 3px solid #004aad;
+            font-size: 0.9em; /* Menor e mais discreto */
         }
         .contact-form {
             display: flex;
