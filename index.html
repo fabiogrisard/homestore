@@ -69,7 +69,6 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: none;
         }
         footer {
             background-color: #f0f0f0;
@@ -102,6 +101,20 @@
         }
         .contact-form button:hover {
             background-color: #35bfc0;
+        }
+        .cta-button {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #5ae2e6;
         }
         .social-icons {
             position: fixed;
@@ -189,38 +202,61 @@
     </div>
     <div class="content" id="home">
         <h2>Bem-vindo à Home Store!</h2>
-        <p>Comodidade e serviço exclusivo disponíveis 24 horas por dia!</p>
+        <p>Descubra a comodidade de ter um mercado autônomo no seu condomínio. Nossa solução oferece acesso a produtos essenciais 24 horas por dia, todos os dias da semana, sem a necessidade de funcionários. Isso significa que você pode fazer suas compras a qualquer momento que precisar, com facilidade e segurança.</p>
+        <a href="javascript:void(0)" onclick="showSection('sobre')" class="cta-button">Saiba Mais</a>
     </div>
     <div class="content" id="sobre">
         <h2>Sobre o Mercado</h2>
-        <p>A Home Store oferece um serviço autônomo exclusivo, sem funcionários, disponível 24 horas, com diversidade de produtos e preço competitivo.</p>
+        <p>A Home Store é uma inovadora solução de mercado autônomo, ideal para condomínios que buscam oferecer mais comodidade e valor aos seus residentes. Nosso sistema é totalmente automatizado, permitindo que os usuários escaneiem produtos e realizem pagamentos de forma rápida e segura. Acreditamos que o futuro das compras é a autonomia, e estamos comprometidos em trazer essa experiência para você.</p>
+        <p>Com uma variedade de produtos cuidadosamente selecionados, garantimos que você encontrará tudo o que precisa, desde itens básicos do dia a dia até produtos gourmet. Nossa missão é facilitar sua vida, oferecendo um serviço acessível e de alta qualidade.</p>
+        <a href="javascript:void(0)" onclick="showSection('unidades')" class="cta-button">Nossas Unidades</a>
     </div>
     <div class="content" id="unidades">
         <h2>Unidades Instaladas</h2>
-        <p>Informações sobre as unidades instaladas serão adicionadas aqui.</p>
+        <p>Estamos presentes em diversos condomínios, levando praticidade e inovação para onde você estiver. Confira algumas das nossas instalações:</p>
+        <ul>
+            <li>Condomínio Vista Alegre</li>
+            <li>Residencial Primavera</li>
+            <li>Condomínio Jardim das Flores</li>
+        </ul>
+        <p>Interessado em instalar uma Home Store no seu condomínio? Entre em contato e descubra como podemos ajudar.</p>
+        <a href="javascript:void(0)" onclick="showSection('contato')" class="cta-button">Entre em Contato</a>
     </div>
     <div class="content" id="funciona">
         <h2>Como Funciona</h2>
-        <p>Comprar virou uma tarefa simples com o Totem de Autoatendimento HomeStore:</p>
+        <p>Comprar na Home Store é simples e prático:</p>
         <ul>
-            <li>Escanear ou Selecionar: Basta escanear os produtos ou selecioná-los na lista.</li>
-            <li>Escolher o Método de Pagamento: Selecione sua forma de pagamento preferida.</li>
-            <li>Finalização Instantânea: Confirme o pagamento e pronto!</li>
+            <li><strong>Escanear ou Selecionar:</strong> Use nosso leitor de código de barras para escanear os produtos ou selecione diretamente na lista disponível no totem.</li>
+            <li><strong>Escolher o Método de Pagamento:</strong> Pague suas compras usando cartão de crédito, débito ou outros métodos disponíveis.</li>
+            <li><strong>Finalização Instantânea:</strong> Confirme o pagamento e pronto! Suas compras estão feitas.</li>
         </ul>
+        <div style="margin-top: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p>Assista ao vídeo acima para ver como é fácil usar a Home Store!</p>
+        <a href="https://wa.me/5542984441701" class="cta-button">Fale Conosco Pelo WhatsApp</a>
     </div>
     <div class="content" id="contato">
         <h2>Contato</h2>
-        <p>Entre em contato conosco pelo e-mail <a href="mailto:mercadoguarapuava@gmail.com">mercadoguarapuava@gmail.com</a>.</p>
-        <a href="https://wa.me/5542984441701"  class="whatsapp-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20">
-            WhatsApp: +55 42 9 8444-1701
-        </a>
+        <p>Entre em contato conosco para saber mais sobre como podemos atender suas necessidades. Estamos aqui para ajudar!</p>
         <form class="contact-form">
             <input type="text" placeholder="Nome" required>
             <input type="email" placeholder="E-mail" required>
             <textarea placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
+        <p>Siga-nos nas redes sociais para ficar por dentro das novidades:</p>
+        <div class="social-icons" style="justify-content: center; position: static;">
+            <a href="https://www.instagram.com/homestore.guarapuava/" >
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:mercadoguarapuava@gmail.com" >
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/5542984441701" >
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
     </div>
     <footer>
         <p>Home Store LTDA | CNPJ: 51.207.860/0001-31 | Inscrição Estadual PR: 91011958-37</p>
