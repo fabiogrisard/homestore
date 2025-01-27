@@ -1,1 +1,117 @@
-oiii
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #004aad;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5ae2e6;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004aad;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #5ae2e6;
+            color: #004aad;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+            color: #004aad;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #5ae2e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #35bfc0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Store</h1>
+        <p>Mercado autônomo para condomínios em Guarapuava e região</p>
+    </header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre o Mercado</a>
+        <a href="#unidades">Unidades</a>
+        <a href="#funciona">Como Funciona</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="content" id="home">
+        <h2>Bem-vindo à Home Store!</h2>
+        <p>Comodidade e serviço exclusivo disponíveis 24 horas por dia!</p>
+    </div>
+    <div class="content" id="sobre">
+        <h2>Sobre o Mercado</h2>
+        <p>A Home Store oferece um serviço autônomo exclusivo, sem funcionários, disponível 24 horas, com diversidade de produtos e preço competitivo.</p>
+    </div>
+    <div class="content" id="unidades">
+        <h2>Unidades Instaladas</h2>
+        <p>Informações sobre as unidades instaladas serão adicionadas aqui.</p>
+    </div>
+    <div class="content" id="funciona">
+        <h2>Como Funciona</h2>
+        <p>Comprar virou uma tarefa simples com o Totem de Autoatendimento HomeStore:</p>
+        <ul>
+            <li>Escanear ou Selecionar: Basta escanear os produtos ou selecioná-los na lista.</li>
+            <li>Escolher o Método de Pagamento: Selecione sua forma de pagamento preferida.</li>
+            <li>Finalização Instantânea: Confirme o pagamento e pronto!</li>
+        </ul>
+    </div>
+    <div class="content" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco pelo e-mail <a href="mailto:mercadoguarapuava@gmail.com">mercadoguarapuava@gmail.com</a> ou pelo WhatsApp <a href="https://wa.me/5542984441701" >+55 42 9 8444-1701</a>.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p>Home Store LTDA | CNPJ: 51.207.860/0001-31 | Inscrição Estadual PR: 91011958-37</p>
+        <p>Endereço: Avenida Das Dálias, 24, Sala 03, Trianon, Guarapuava, PR, 85012-110</p>
+        <p>&copy; 2025 Home Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
