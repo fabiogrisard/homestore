@@ -18,6 +18,20 @@
             padding: 20px;
             text-align: center;
             border-bottom: 3px solid #004aad;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+        }
+        header.shrink {
+            padding: 10px;
+        }
+        header img {
+            width: 150px;
+            transition: width 0.3s ease-in-out;
+        }
+        header.shrink img {
+            width: 100px;
         }
         nav {
             display: flex;
@@ -101,12 +115,20 @@
 
         window.onload = function() {
             showSection('home');
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('shrink');
+                } else {
+                    header.classList.remove('shrink');
+                }
+            });
         }
     </script>
 </head>
 <body>
     <header>
-        <h1>Home Store</h1>
+        <img src="https://raw.githubusercontent.com/fabiogrisard/homestore/refs/heads/main/logocomfundo.jpeg" alt="Home Store Logo">
         <p>Mercado autônomo para condomínios em Guarapuava e região</p>
     </header>
     <nav>
