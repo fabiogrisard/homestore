@@ -44,6 +44,7 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
         }
         footer {
             background-color: #f0f0f0;
@@ -89,6 +90,19 @@
             margin-right: 8px;
         }
     </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        window.onload = function() {
+            showSection('home');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -96,11 +110,11 @@
         <p>Mercado autônomo para condomínios em Guarapuava e região</p>
     </header>
     <nav>
-        <a href="#home">Início</a>
-        <a href="#sobre">Sobre o Mercado</a>
-        <a href="#unidades">Unidades</a>
-        <a href="#funciona">Como Funciona</a>
-        <a href="#contato">Contato</a>
+        <a href="javascript:void(0)" onclick="showSection('home')">Início</a>
+        <a href="javascript:void(0)" onclick="showSection('sobre')">Sobre o Mercado</a>
+        <a href="javascript:void(0)" onclick="showSection('unidades')">Unidades</a>
+        <a href="javascript:void(0)" onclick="showSection('funciona')">Como Funciona</a>
+        <a href="javascript:void(0)" onclick="showSection('contato')">Contato</a>
     </nav>
     <div class="content" id="home">
         <h2>Bem-vindo à Home Store!</h2>
